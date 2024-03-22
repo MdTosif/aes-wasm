@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Encryption } from "./encryption/page";
-import { Decryption } from "./decryption/page";
+import Decryption from "./decryption/page-client";
+import Encryption from "./encryption/page-client";
 
 export default function Home() {
   const [tab, setTab] = useState<"encrypt" | "decrypt">("encrypt");
